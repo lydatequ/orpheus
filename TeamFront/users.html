@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="index.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test06</title>
+
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous">
+        </script>
+    <!--Bootstrap 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <!---- Top Navbar---->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-md navbar-fixed-top">
+        <a class="navbar-brand" href="#">
+            <img src="images\logo2.jpg" width="30" height="30" alt="logo">
+            ORPHEUS
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-list-1"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-list-1">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link  openCloseCart" href="#"><i class="fas fa-cart-plus"></i><span
+                            id="itemCount"></span> Cart</a>
+                </li>
+                <li class="nav-item dropdn">
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i>Profile <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content bg-dark">
+                        <a class="nav-link" href="#">My account</a>
+                        <a class="nav-link logout" href="#">Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="main-panel">
+        <div class="container">
+            <ul class="nav nav-tabs nav-justified">
+                <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#home1">
+                        <h4>Overview</h4>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#piano">
+                        <h4>Piano</h4>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#guitar">
+                        <h4>Guitar</h4>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#violin">
+                        <h4>Violin</h4>
+                    </a></li>
+                <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#saxophone">
+                        <h4>Saxophone</h4>
+                    </a></li>
+            </ul>
+
+            <div class="tab-content">
+                <div id="home1" class="tab-pane fade-in active">
+                    <h3>Welcome to our site!</h3>
+                    <p><strong>Pick your instrument and select from a variety of courses for beginners or experienced musicians!</strong>
+                    </p>
+                    <div row smallinstr>
+                        <div col><img class="d-block w-100 smallPiano" src="images/banner.jpg" alt="Instruments Menu"></div>
+                        
+                    </div>
+                </div>
+                <div id="piano" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Beginners</h2>
+                        </div>
+                        <div class="pianoBeg col-lg-9"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Advanced</h2>
+                        </div>
+                        <div class="pianoAdv col-lg-9"></div>
+                    </div>
+                </div>
+                <div id="guitar" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Beginners</h2>
+                        </div>
+                        <div class="guitarBeg col-lg-9"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Advanced</h2>
+                        </div>
+                        <div class="guitarAdv col-lg-9"></div>
+                    </div>
+                </div>
+                <div id="violin" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Beginners</h2>
+                        </div>
+                        <div class="violinBeg col-lg-9"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Advanced</h2>
+                        </div>
+                        <div class="violinAdv col-lg-9"></div>
+                    </div>
+                </div>
+                <div id="saxophone" class="tab-pane fade">
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Beginners</h2>
+                        </div>
+                        <div class="saxophoneBeg col-lg-9"></div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-lg-3 pt-2">
+                            <h2>Advanced</h2>
+                        </div>
+                        <div class="saxophoneAdv col-lg-9"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container cartopaque"></div>
+
+
+    <!---------Shopping Cart--------->
+    <div id="shoppingCart">
+        <div id="cartItemsContainer">
+            <h2><span class="item-quantity">0</span> Item(s) in your cart</h2>
+            <i class="button fa fa-times fa-3x openCloseCart" aria-hidden="true"></i>
+            <table class="show-cart table">
+
+            </table>
+            <div class="total-txt">
+                <h5>TOTAL PRICE: $ <span class="total-cart"></span></h5>
+            </div>
+            <div class="cart-buttons">
+                <a href="#0" class="button empty-cart-btn">Empty</a>
+                <a href="#0" class="button cart-checkout">Checkout</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------Bottom Navbar--------->
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+        <div class="container-fluid flex-column flex-md-row">
+            <div class="row">
+                <strong>
+                    <a href="#" class="navbar-brand d-none d-sm-block ml-5 nav-link nav-item"><i class="fab fa-twitter"></i></a></strong>
+                <a href="#" class="navbar-brand d-none d-sm-block nav-link nav-item lead"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="navbar-brand d-none d-sm-block nav-link nav-item lead"><i class="fab fa-instagram"></i></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarRiseUp"
+                aria-controls="navbarRiseUp" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="far fa-comment-dots"></i><h4>Join Our Chat Now!</h4>
+            </button>
+            <div class="collapse bg-dark" id="navbarRiseUp">
+                <div class="container">
+                    <div class="row">
+                    </div>
+                </div>
+                <!----------- Footer Bar ------------>
+                <footer class="container-fluid text-light">
+                    <div class="row myFooter">
+                        <div class="col-lg-4 footer-nav">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item">
+                                    <a class="nav-link active bg-dark text-light" id="chat-login-tab" data-toggle="tab"
+                                        href="#chat-login" role="tab" aria-controls="chat-login"
+                                        aria-selected="true">Chat Login</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link bg-dark text-light" id="users-online-tab" data-toggle="tab"
+                                        href="#users-online" role="tab" aria-controls="users-online"
+                                        aria-selected="false">Users Online</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="chat-login" role="tabpanel"
+                                    aria-labelledby="chat-login-tab">
+                                    <h5>Welcome to our Chat!</h5>
+                                    <form action="#">
+                                        Please type your screen-name:<br>
+                                        <input id="screen-name-input" type="text" name="screen-name" value=""><br>
+                                        <input id="screen-name-submit" type="submit" value="Submit">
+                                    </form>
+                                    <p class="text-muted">
+                                    </p>
+                                </div>
+                                <div class="tab-pane fade" id="users-online" role="tabpanel"
+                                    aria-labelledby="users-online-tab">
+                                    <h5>Online Now:</h5>
+                                    <ul class="users">
+                                        <li>David</li>
+                                    </ul>
+                                    <br>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!------ Chat ------>
+                        <div class="col-lg-6 container-fluid flex-column flex-md-row text-light">
+                            <div class="row my-chat">
+                                <div class="col-lg pt-2 msg-window-container">
+                                    <div id="msgWindow" class="card">
+                                        <div class="card-header">
+                                            <span class="card-title">ORPHEUS CHAT</span>
+                                        </div>
+                                        <div class="container messages">
+                                            <div class="card-body" id="msgs">
+
+                                            </div>
+                                        </div>
+                                        <div class="card-footer">
+                                            <div class="input-group" id="msgForm" data-sender="me">
+                                                <input class="form-control" type="text"
+                                                    placeholder="Type message and hit [Enter] to send.">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary"
+                                                        type="button">Send</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </nav>
+    <script src="users.js"></script>
+</body>
+
+</html>
